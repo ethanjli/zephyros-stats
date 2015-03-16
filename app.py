@@ -11,7 +11,6 @@ from flask import Flask, render_template, send_from_directory
 from flask.ext.socketio import SocketIO, emit, disconnect
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = b"\xb9\x82y=\x8f\xba\xa2\xc5&*\x13n\xe0L\xe4\x91\xed\xc5\xab\xaa\t\r\xccd"
 socketio = SocketIO(app)
 thread = {}
 
